@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "MainViewController.h"
 
 
 @interface AppDelegate ()
@@ -20,10 +20,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    ViewController *viewController = [[ViewController alloc] init];
+    MainViewController *viewController = [[MainViewController alloc] init];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
     
     _window = [[UIWindow alloc] init];
-    _window.rootViewController = viewController;
+    _window.rootViewController = navigationController;
     [_window makeKeyAndVisible];
     
     return YES;

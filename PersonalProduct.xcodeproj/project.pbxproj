@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		94BC28501E600CEC003B206D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC284F1E600CEC003B206D /* main.m */; };
 		94BC28531E600CEC003B206D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC28521E600CEC003B206D /* AppDelegate.m */; };
-		94BC28561E600CEC003B206D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC28551E600CEC003B206D /* ViewController.m */; };
+		94BC28561E600CEC003B206D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC28551E600CEC003B206D /* MainViewController.m */; };
 		94BC285B1E600CEC003B206D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94BC285A1E600CEC003B206D /* Assets.xcassets */; };
 		94BC285E1E600CEC003B206D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94BC285C1E600CEC003B206D /* LaunchScreen.storyboard */; };
 		94BC28691E600CEC003B206D /* PersonalProductTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC28681E600CEC003B206D /* PersonalProductTests.m */; };
 		94BC28741E600CEC003B206D /* PersonalProductUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC28731E600CEC003B206D /* PersonalProductUITests.m */; };
+		94BC28831E60163E003B206D /* GJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC28821E60163E003B206D /* GJBaseViewController.m */; };
+		94BC28891E6016DE003B206D /* DeviceInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC28881E6016DE003B206D /* DeviceInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +40,8 @@
 		94BC284F1E600CEC003B206D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		94BC28511E600CEC003B206D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		94BC28521E600CEC003B206D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		94BC28541E600CEC003B206D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		94BC28551E600CEC003B206D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		94BC28541E600CEC003B206D /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		94BC28551E600CEC003B206D /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		94BC285A1E600CEC003B206D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94BC285D1E600CEC003B206D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94BC285F1E600CEC003B206D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		94BC286F1E600CEC003B206D /* PersonalProductUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonalProductUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94BC28731E600CEC003B206D /* PersonalProductUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalProductUITests.m; sourceTree = "<group>"; };
 		94BC28751E600CEC003B206D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94BC28811E60163E003B206D /* GJBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJBaseViewController.h; sourceTree = "<group>"; };
+		94BC28821E60163E003B206D /* GJBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJBaseViewController.m; sourceTree = "<group>"; };
+		94BC28871E6016DE003B206D /* DeviceInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfoViewController.h; sourceTree = "<group>"; };
+		94BC28881E6016DE003B206D /* DeviceInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +107,16 @@
 			children = (
 				94BC28511E600CEC003B206D /* AppDelegate.h */,
 				94BC28521E600CEC003B206D /* AppDelegate.m */,
-				94BC28541E600CEC003B206D /* ViewController.h */,
-				94BC28551E600CEC003B206D /* ViewController.m */,
+				94BC28541E600CEC003B206D /* MainViewController.h */,
+				94BC28551E600CEC003B206D /* MainViewController.m */,
 				94BC285A1E600CEC003B206D /* Assets.xcassets */,
 				94BC285C1E600CEC003B206D /* LaunchScreen.storyboard */,
 				94BC285F1E600CEC003B206D /* Info.plist */,
 				94BC284E1E600CEC003B206D /* Supporting Files */,
+				94BC28811E60163E003B206D /* GJBaseViewController.h */,
+				94BC28821E60163E003B206D /* GJBaseViewController.m */,
+				94BC28871E6016DE003B206D /* DeviceInfoViewController.h */,
+				94BC28881E6016DE003B206D /* DeviceInfoViewController.m */,
 			);
 			path = PersonalProduct;
 			sourceTree = "<group>";
@@ -272,7 +282,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94BC28561E600CEC003B206D /* ViewController.m in Sources */,
+				94BC28831E60163E003B206D /* GJBaseViewController.m in Sources */,
+				94BC28561E600CEC003B206D /* MainViewController.m in Sources */,
+				94BC28891E6016DE003B206D /* DeviceInfoViewController.m in Sources */,
 				94BC28531E600CEC003B206D /* AppDelegate.m in Sources */,
 				94BC28501E600CEC003B206D /* main.m in Sources */,
 			);
