@@ -8,9 +8,13 @@
 
 #import "MainViewController.h"
 #import "DeviceInfoViewController.h"
+#import "TypeConversionViewController.h"
 
 
 @interface MainViewController () <UITableViewDelegate, UITableViewDataSource>
+{
+    NSArray *_dataSource;
+}
 
 @property(nonatomic,strong) UITableView *tableView;
 
@@ -25,6 +29,8 @@
     self.navigationItem.title = @"Demo 列表";
     
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    _dataSource = @[@"设备信息", @"类型转换"];
     
     [self.tableView reloadData];
 }
@@ -48,13 +54,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return _dataSource.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [[UITableViewCell alloc] init];
-    cell.textLabel.text = [NSString stringWithFormat:@"第%ld行", indexPath.row];
+    cell.textLabel.text = _dataSource[indexPath.row];
     
     return cell;
 }
@@ -64,9 +70,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    DeviceInfoViewController *deviceInfoViewController = [[DeviceInfoViewController alloc] init];
-    
-    [self.navigationController pushViewController:deviceInfoViewController animated:YES];
+    if (indexPath.row == 0) {
+        DeviceInfoViewController *viewController = [[DeviceInfoViewController alloc] init];
+        
+        [self.navigationController pushViewController:viewController animated:YES];
+    }
+    else {
+        TypeConversionViewController *viewController = [[TypeConversionViewController alloc] init];
+        [self.navigationController pushViewController:viewController animated:YES];
+    }
 }
 
 @end
