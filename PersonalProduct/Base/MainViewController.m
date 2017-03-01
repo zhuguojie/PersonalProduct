@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "DeviceInfoViewController.h"
 #import "TypeConversionViewController.h"
+#import "MultiPictureViewController.h"
 
 
 @interface MainViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -30,7 +31,7 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    _dataSource = @[@"设备信息", @"类型转换"];
+    _dataSource = @[@"设备信息", @"类型转换", @"多图展示"];
     
     [self.tableView reloadData];
 }
@@ -75,10 +76,15 @@
         
         [self.navigationController pushViewController:viewController animated:YES];
     }
-    else {
+    else if (indexPath.row == 1) {
         TypeConversionViewController *viewController = [[TypeConversionViewController alloc] init];
         [self.navigationController pushViewController:viewController animated:YES];
     }
+    else {
+        MultiPictureViewController *viewController = [[MultiPictureViewController alloc] init];
+        [self.navigationController pushViewController:viewController animated:YES];
+    }
+    
 }
 
 @end
