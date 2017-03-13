@@ -10,6 +10,7 @@
 #import "DeviceInfoViewController.h"
 #import "TypeConversionViewController.h"
 #import "MultiPictureViewController.h"
+#import "RichTextViewController.h"
 
 
 @interface MainViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -31,7 +32,7 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    _dataSource = @[@"设备信息", @"类型转换", @"多图展示"];
+    _dataSource = @[@"设备信息", @"类型转换", @"多图展示", @"富文本展示"];
     
     [self.tableView reloadData];
 }
@@ -80,11 +81,14 @@
         TypeConversionViewController *viewController = [[TypeConversionViewController alloc] init];
         [self.navigationController pushViewController:viewController animated:YES];
     }
-    else {
+    else if (indexPath.row == 2) {
         MultiPictureViewController *viewController = [[MultiPictureViewController alloc] init];
         [self.navigationController pushViewController:viewController animated:YES];
     }
-    
+    else if (indexPath.row == 3) {
+        RichTextViewController *viewController = [[RichTextViewController alloc] init];
+        [self.navigationController pushViewController:viewController animated:YES];
+    }
 }
 
 @end

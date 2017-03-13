@@ -31,6 +31,10 @@
 		944A8DEA1E671C02002B01B6 /* GJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 944A8DE71E671C02002B01B6 /* GJBaseViewController.m */; };
 		944A8DEB1E671C02002B01B6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 944A8DE91E671C02002B01B6 /* MainViewController.m */; };
 		944A8DEF1E671C32002B01B6 /* MultiPictureLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 944A8DEE1E671C32002B01B6 /* MultiPictureLayoutView.m */; };
+		949339B91E75883B00CDEEC6 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 949339B81E75883B00CDEEC6 /* XMLDictionary.m */; };
+		94A1BCD91E6EF238008C615A /* RichTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A1BCD81E6EF238008C615A /* RichTextViewController.m */; };
+		94A1BCE21E6EF2A1008C615A /* RichTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A1BCDE1E6EF2A1008C615A /* RichTextStorage.m */; };
+		94A1BCE31E6EF2A1008C615A /* RichTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A1BCE01E6EF2A1008C615A /* RichTextView.m */; };
 		94A97AE51E64765E001203EF /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A97ACD1E64765E001203EF /* MASCompositeConstraint.m */; };
 		94A97AE61E64765E001203EF /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A97AD01E64765E001203EF /* MASConstraint.m */; };
 		94A97AE71E64765E001203EF /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A97AD21E64765E001203EF /* MASConstraintMaker.m */; };
@@ -116,6 +120,14 @@
 		944A8DE91E671C02002B01B6 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		944A8DED1E671C32002B01B6 /* MultiPictureLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiPictureLayoutView.h; sourceTree = "<group>"; };
 		944A8DEE1E671C32002B01B6 /* MultiPictureLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiPictureLayoutView.m; sourceTree = "<group>"; };
+		949339B71E75883B00CDEEC6 /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
+		949339B81E75883B00CDEEC6 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
+		94A1BCD71E6EF238008C615A /* RichTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RichTextViewController.h; sourceTree = "<group>"; };
+		94A1BCD81E6EF238008C615A /* RichTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RichTextViewController.m; sourceTree = "<group>"; };
+		94A1BCDD1E6EF2A1008C615A /* RichTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RichTextStorage.h; sourceTree = "<group>"; };
+		94A1BCDE1E6EF2A1008C615A /* RichTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RichTextStorage.m; sourceTree = "<group>"; };
+		94A1BCDF1E6EF2A1008C615A /* RichTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RichTextView.h; sourceTree = "<group>"; };
+		94A1BCE01E6EF2A1008C615A /* RichTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RichTextView.m; sourceTree = "<group>"; };
 		94A97ACC1E64765E001203EF /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		94A97ACD1E64765E001203EF /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
 		94A97ACE1E64765E001203EF /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -184,6 +196,7 @@
 		944A8DA01E65AC30002B01B6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				94A1BCDA1E6EF2A1008C615A /* RichTextView */,
 				944A8DEC1E671C32002B01B6 /* MultiPictureLayoutView */,
 			);
 			path = View;
@@ -198,6 +211,8 @@
 				944A8DA51E671BA1002B01B6 /* MultiPictureViewController.m */,
 				944A8DA61E671BA1002B01B6 /* TypeConversionViewController.h */,
 				944A8DA71E671BA1002B01B6 /* TypeConversionViewController.m */,
+				94A1BCD71E6EF238008C615A /* RichTextViewController.h */,
+				94A1BCD81E6EF238008C615A /* RichTextViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -280,9 +295,30 @@
 			path = MultiPictureLayoutView;
 			sourceTree = "<group>";
 		};
+		949339B61E75883B00CDEEC6 /* XMLDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				949339B71E75883B00CDEEC6 /* XMLDictionary.h */,
+				949339B81E75883B00CDEEC6 /* XMLDictionary.m */,
+			);
+			path = XMLDictionary;
+			sourceTree = "<group>";
+		};
+		94A1BCDA1E6EF2A1008C615A /* RichTextView */ = {
+			isa = PBXGroup;
+			children = (
+				94A1BCDD1E6EF2A1008C615A /* RichTextStorage.h */,
+				94A1BCDE1E6EF2A1008C615A /* RichTextStorage.m */,
+				94A1BCDF1E6EF2A1008C615A /* RichTextView.h */,
+				94A1BCE01E6EF2A1008C615A /* RichTextView.m */,
+			);
+			path = RichTextView;
+			sourceTree = "<group>";
+		};
 		94A97ACA1E64765E001203EF /* Thirdparty */ = {
 			isa = PBXGroup;
 			children = (
+				949339B61E75883B00CDEEC6 /* XMLDictionary */,
 				944A8DAF1E671BC0002B01B6 /* SDWebImage */,
 				94A97ACB1E64765E001203EF /* Masonry */,
 			);
@@ -529,8 +565,10 @@
 				944A8DD41E671BC0002B01B6 /* SDWebImageCompat.m in Sources */,
 				944A8DD91E671BC0002B01B6 /* SDWebImagePrefetcher.m in Sources */,
 				944A8DD31E671BC0002B01B6 /* SDImageCache.m in Sources */,
+				94A1BCD91E6EF238008C615A /* RichTextViewController.m in Sources */,
 				94A97AEC1E64765E001203EF /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				944A8DEA1E671C02002B01B6 /* GJBaseViewController.m in Sources */,
+				94A1BCE21E6EF2A1008C615A /* RichTextStorage.m in Sources */,
 				944A8DDA1E671BC0002B01B6 /* UIButton+WebCache.m in Sources */,
 				94A97AEA1E64765E001203EF /* MASViewConstraint.m in Sources */,
 				944A8DDD1E671BC0002B01B6 /* UIImage+WebP.m in Sources */,
@@ -541,8 +579,10 @@
 				94A97AED1E64765E001203EF /* View+MASAdditions.m in Sources */,
 				944A8DDC1E671BC0002B01B6 /* UIImage+MultiFormat.m in Sources */,
 				944A8DD51E671BC0002B01B6 /* SDWebImageDecoder.m in Sources */,
+				94A1BCE31E6EF2A1008C615A /* RichTextView.m in Sources */,
 				944A8DD21E671BC0002B01B6 /* NSData+ImageContentType.m in Sources */,
 				94A97AE51E64765E001203EF /* MASCompositeConstraint.m in Sources */,
+				949339B91E75883B00CDEEC6 /* XMLDictionary.m in Sources */,
 				944A8DD71E671BC0002B01B6 /* SDWebImageDownloaderOperation.m in Sources */,
 				944A8DD11E671BC0002B01B6 /* MKAnnotationView+WebCache.m in Sources */,
 				94A97AE91E64765E001203EF /* MASViewAttribute.m in Sources */,
