@@ -1,0 +1,3 @@
+[submodule "PersonalProduct/Libs"]
+	path = PersonalProduct/Libs
+	url = https://zhuguojie-unnoo@github.com/zhuguojie-unnoo/multiPictureLayoutView.git
